@@ -11,3 +11,6 @@ differential:vulcanize
 iron:router
 meteorhacks:inject-initial
 less
+accounts-google
+service-configuration
+accounts-password

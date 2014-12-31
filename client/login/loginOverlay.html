@@ -1,0 +1,24 @@
+<template name="loginOverlay">
+    <paper-action-dialog backdrop autoCloseDisabled layered="false" id="login-overlay">
+        <div>
+            <paper-tabs selected="0" class="transparent-teal">
+                <paper-tab>CREAR CUENTA</paper-tab>
+                <paper-tab>INGRESAR</paper-tab>
+            </paper-tabs>
+            <core-pages flex>
+                <div>
+                    {{>signUp}}
+                </div>
+                <div>
+                    {{>signIn}}
+                </div>
+            </core-pages>
+        </div>
+
+        <!--<div>
+            <paper-button class="signin btn-google" icon="menu">Entrar Con Google</paper-button>
+        </div>
+
+        <paper-button affirmative autofocus>Tap me to close</paper-button>-->
+    </paper-action-dialog>
+</template>

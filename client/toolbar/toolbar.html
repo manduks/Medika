@@ -3,6 +3,13 @@
         <span flex>Medika</span>
         <!--<paper-icon-button icon="refresh"></paper-icon-button>-->
         <!--<paper-icon-button icon="more-vert"></paper-icon-button>-->
-        <paper-button>Entrar</paper-button>
+        {{#unless currentUser}}
+            <paper-button class="login-options">Entrar</paper-button>
+        {{/unless}}
+        {{#if currentUser}}
+            <paper-button class="logout">Salir</paper-button>
+        {{/if}}
     </core-toolbar>
+
+    {{>loginOverlay}}
 </template>

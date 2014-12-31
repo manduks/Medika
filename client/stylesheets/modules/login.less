@@ -1,0 +1,22 @@
+@import '../vars';
+
+#login-overlay {
+  width: 350px;
+  height: 350px;
+  .transparent-teal {
+    background-color: transparent;
+    color: @color-teal;
+    box-shadow: none;
+  }
+  .transparent-teal::shadow #selectionBar {
+    background-color: #00bcd4;
+  }
+
+  .transparent-teal paper-tab::shadow #ink {
+    color: #00bcd4;
+  }
+  .btn-google {
+    background-color: @color-blue-main;
+    color: @color-white-toolbar-text;
+  }
+}
