@@ -8,7 +8,7 @@ Template.signIn.events({
 
             Meteor.loginWithPassword(email, pass, function (error) {
                 if (error) {
-                    return alert(error.reason);
+                    return Toaster.show('error',error.reason);
                 } else {
                     document.getElementById('login-overlay').toggle();
                     return Router.go("home");

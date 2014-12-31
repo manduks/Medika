@@ -11,7 +11,7 @@ Template.signUp.events({
                 password: password
             }, function (error) {
                 if (error) {
-                    return alert(error.reason);
+                    return Toaster.show('Error',error.reason);
                 } else {
                     document.getElementById('login-overlay').toggle();
                     return Router.go("home");
