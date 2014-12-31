@@ -1,16 +1,52 @@
-body {
-  font-family: sans-serif;
+// imports
+@import 'lib/lesshat';
+@import 'lib/normalize.css';
+@import 'vars';
+@import 'typography';
+
+// Import Roboto Font // -----------------------------------
+
+@import url(//fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700,700italic);
+
+
+// Body // -----------------------------------
+
+* {
+  .box-sizing(border-box);
 }
-core-header-panel {
-  background: white;
+html body {
+  .type-body();
+  height: 100%;
+  margin: 0;
+  color: @color-black;
+  background: @color-white;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
-core-toolbar {
-  background-color: #03A9F4 !important;
-  height: 300px;
+a {
+  .transition(all 0.2s ease);
+  text-decoration: none;
+  color: inherit;
+}
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+h2 {
+  .type-size-display();
+  font-weight: 500;
+}
+img {
+  width: 100%;
+}
+label {
+  .type-caption();
+  color: @color-black-light;
 }
 p {
-  margin: 20px;
-  padding: 80px 20px;
-  border-radius: 20px;
-  background-color: #eee;
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
 }

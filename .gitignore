@@ -1,6 +1,9 @@
+.idea/
+.idea/*
 .DS_Store
 *.sublime-project
 *.sublime-workspace
+.project
 dump
 packages/schnie:vulcanize/
 public/components
