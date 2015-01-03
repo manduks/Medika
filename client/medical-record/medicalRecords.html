@@ -1,0 +1,13 @@
+<template name="medicalRecords">
+    <core-toolbar class="title-bar">
+        <span flex>Expedientes Médicos</span>
+        <paper-fab class="add-record" icon="add" role="button" tabindex="0" aria-label="add"></paper-fab>
+    </core-toolbar>
+    <div class="grid">
+        {{#each records}}
+            <paper-item>
+                <span class="text">{{description}}</span>
+            </paper-item>
+        {{/each}}
+    </div>
+</template>

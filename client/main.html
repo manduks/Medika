@@ -1,7 +1,16 @@
 <template name="main">
-    {{> toolbar}}
-    <div id="content-container">
-        {{> yield}}
-    </div>
-    {{> toaster}}
+    <core-drawer-panel id="drawerPanel" drawerwidth="320px" responsivewidth="{{responsiveWidth}}" touch-action="">
+        <core-header-panel drawer>
+            <core-toolbar class="medium-tall">
+                <div class="">Medika</div>
+                <div class="bottom">Buscar Expediente</div>
+            </core-toolbar>
+            {{>filterRecords}}
+        </core-header-panel>
+        <core-header-panel main shadow>
+            <paper-shadow>
+                {{>medicalRecords}}
+            </paper-shadow>
+        </core-header-panel>
+    </core-drawer-panel>
 </template>

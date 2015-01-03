@@ -1,15 +1,7 @@
 <template name="toolbar">
     <core-toolbar>
         <span flex>Medika</span>
-        <!--<paper-icon-button icon="refresh"></paper-icon-button>-->
-        <!--<paper-icon-button icon="more-vert"></paper-icon-button>-->
-        {{#unless currentUser}}
-            <paper-button class="login-options">Entrar</paper-button>
-        {{/unless}}
-        {{#if currentUser}}
-            <paper-button class="logout">Salir</paper-button>
-        {{/if}}
+        <paper-button class="login-options">Entrar</paper-button>
     </core-toolbar>
-
     {{>loginOverlay}}
 </template>
