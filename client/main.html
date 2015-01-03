@@ -2,12 +2,12 @@
     <core-drawer-panel id="drawerPanel" drawerwidth="320px" responsivewidth="{{responsiveWidth}}" touch-action="">
         <core-header-panel drawer>
             <core-toolbar class="medium-tall">
-                <div class="">Medika</div>
+                <div class="app-title">Medika</div>
                 <div class="bottom">Buscar Expediente</div>
             </core-toolbar>
             {{>filterRecords}}
         </core-header-panel>
-        <core-header-panel main shadow>
+        <core-header-panel main>
             <paper-shadow>
                 {{>medicalRecords}}
             </paper-shadow>
