@@ -1,5 +1,8 @@
 Template.toolbar.helpers({
-    isAdmin: Helpers.isAdmin
+    isAdmin: Helpers.isAdmin,
+    toolbarClass :  function () {
+        return Meteor.user() ? 'green-toolbar' : 'blue-toolbar';
+    }
 });
 Template.toolbar.events({
     'click .login-options': function () {

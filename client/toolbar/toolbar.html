@@ -1,7 +1,12 @@
 <template name="toolbar">
-    <core-toolbar>
+    <core-toolbar class="{{toolbarClass}}">
         <span flex>Medika</span>
-        <paper-button class="login-options">Entrar</paper-button>
+        {{#if currentUser}}
+            <input type="search" id="input" on-keyup="{{ onKeyPress }}" autocomplete="off">
+            <paper-button class="logout">Salir</paper-button>
+        {{else}}
+            <paper-button class="login-options">Entrar</paper-button>
+        {{/if}}
     </core-toolbar>
     {{>loginOverlay}}
 </template>

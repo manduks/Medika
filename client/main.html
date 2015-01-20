@@ -1,16 +1,5 @@
 <template name="main">
-    <core-drawer-panel id="drawerPanel" drawerwidth="320px" responsivewidth="{{responsiveWidth}}" touch-action="">
-        <core-header-panel drawer>
-            <core-toolbar class="medium-tall">
-                <div class="app-title">Medika</div>
-                <div class="bottom">Buscar Expediente</div>
-            </core-toolbar>
-            {{>filterRecords}}
-        </core-header-panel>
-        <core-header-panel main>
-            <paper-shadow>
-                {{>medicalRecords}}
-            </paper-shadow>
-        </core-header-panel>
-    </core-drawer-panel>
+    <paper-shadow>
+        {{>medicalRecords}}
+    </paper-shadow>
 </template>
