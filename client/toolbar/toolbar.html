@@ -1,8 +1,11 @@
 <template name="toolbar">
-    <core-toolbar class="{{toolbarClass}}">
+    <core-toolbar class="blue-toolbar">
         <span flex>Medika</span>
         {{#if currentUser}}
-            <input type="search" id="input" on-keyup="{{ onKeyPress }}" autocomplete="off">
+            <div id="search">
+                <paper-icon-button id="search-btn" icon="search" role="button" tabindex="0" aria-label="search"></paper-icon-button>
+                <input type="search" id="search-input" autocomplete="off">
+            </div>
             <paper-button class="logout">Salir</paper-button>
         {{else}}
             <paper-button class="login-options">Entrar</paper-button>

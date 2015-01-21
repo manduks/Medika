@@ -13,3 +13,41 @@ core-toolbar {
 .transparent-toolbar{
   background-color: transparent !important;
 }
+#search {
+  display: flex;
+}
+#search-btn {
+  display: inline-block;
+  position: relative;
+  padding: 8px;
+  outline: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  z-index: 0;
+}
+#search-input {
+  background-color: inherit;
+  width: 10px;
+  border: none;
+  font-size: 20px;
+  outline: 0;
+  padding: 0;
+  color: inherit;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0;
+  -moz-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  -o-flex: 1 0 0;
+  flex: 1 0 0;
+  visibility: hidden;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+.input-show {
+  padding: 10px;
+  width: 400px !important;
+  visibility: visible !important;
+}

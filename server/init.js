@@ -1,5 +1,4 @@
 Meteor.startup(function() {
-
   if (MedicalRecords.find().count() === 0) {
     var courseId = 0,
         agendaId;

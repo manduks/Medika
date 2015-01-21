@@ -1,5 +1,10 @@
 Template.medicalRecords.helpers({
     records: function() {
-        return MedicalRecords.find({});
+        if(!Session.get('filter')){
+            Session.set('filter', '');
+        }
+        return MedicalRecords.find({
+            description:{$regex: Session.get('filter'), $options: 'i'}
+        });
     }
 });
