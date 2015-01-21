@@ -3,17 +3,15 @@
 @import 'lib/normalize.css';
 @import 'vars';
 @import 'typography';
-
 // Import Roboto Font // -----------------------------------
-
 @import url(//fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700,700italic);
-
 
 // Body // -----------------------------------
 
 * {
   .box-sizing(border-box);
 }
+
 html body {
   .type-body();
   height: 100%;
@@ -24,34 +22,41 @@ html body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
 a {
   .transition(all 0.2s ease);
   text-decoration: none;
   color: inherit;
 }
+
 h1, h2, h3, h4, h5 {
   margin: 0;
 }
+
 h2 {
   .type-size-display();
   font-weight: 500;
 }
+
 img {
   width: 100%;
 }
+
 label {
   .type-caption();
   color: @color-black-light;
 }
+
 p {
   margin: 0;
 }
+
 ul {
   padding: 0;
   margin: 0;
 }
 
-#drawerPanel, [drawer]{
+#drawerPanel, [drawer] {
   background-color: #eee;
   display: block;
   position: absolute;
@@ -61,6 +66,7 @@ ul {
   height: 100%;
   overflow: hidden;
 }
-.app-title{
+
+.app-title {
   font-size: 2em;
 }
