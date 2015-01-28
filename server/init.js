@@ -10,6 +10,6 @@ Meteor.startup(function () {
     }
 
     return Inject.rawModHtml('addUnresolved', function (html) {
-        return html = html.replace('<body>', '<body unresolved>');
+        return html = html.replace('<body>', '<body fullbleed layout vertical>');
     });
 });
