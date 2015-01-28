@@ -1,5 +1,5 @@
 Template.toolbar.helpers({
-    isAdmin: Helpers.isAdmin
+  isAdmin: Helpers.isAdmin
 });
 Template.toolbar.events({
     'click .login-options': function () {

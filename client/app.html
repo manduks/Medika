@@ -1,7 +1,9 @@
 <template name="app">
 	<core-header-panel flex> 
 	    {{> toolbar}}
-	    {{> yield}}
+	    <div class="content">
+	    	{{> yield}}
+	    </div>	    
    </core-header-panel> 
     {{> toaster}}
 </template>
